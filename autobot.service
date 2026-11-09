@@ -1,0 +1,12 @@
+[Unit]
+Description=Auto Accept + Group Manager Bot
+After=network-online.target
+
+[Service]
+WorkingDirectory=/opt/autobot
+ExecStart=/opt/autobot/venv/bin/python main.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
